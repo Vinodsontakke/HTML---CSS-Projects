@@ -1,0 +1,68 @@
+html,body{
+  height: 100%;
+  margin: 0;
+  font-size: 16px;
+  font-family: "lato" , sans-serif;
+  font-weight: 400;
+  line-height: 1.8em;
+  color: #666;
+}
+.pimg1{
+  background-image: url(images/image1.png);
+  min-height: 100%;
+}
+.pimg1,.pimg2,.pimg3{
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment:fixed;
+}
+.pimg2{
+  background-image: url(images/image2.png);
+  height: 400px;
+}
+.pimg3{
+  background-image: url(images/image3.png);
+  height: 400px;
+}
+.ptext{
+  position:absolute;
+  top: 50%;
+  width: 100%;
+  font-size: 30px;
+  color: black;
+  letter-spacing: 8px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.bgtext{
+  background-color: #313534;
+  color: white;
+  padding: 25px;
+}
+.section_one{
+  padding: 50px 80px;
+  text-align: center;
+}
+.section_ligth{
+  background-color: #f4f4f4 ;
+  color: #666;
+}
+.section_dark{
+  background-color: #282e34;
+  color: #ddd;
+}
+
+.ptext{
+  background: transparent;
+  color: white;
+}
+.bgtexttransperent {
+  background: rgba(255, 255, 255, 0.15); /* transparent background */
+  backdrop-filter: blur(6px); /* blur the background image */
+  -webkit-backdrop-filter: blur(6px); /* for Safari support */
+  color:black;
+  padding: 25px;
+  border-radius: 5px;
+}
