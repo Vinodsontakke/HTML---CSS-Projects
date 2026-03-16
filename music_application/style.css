@@ -1,0 +1,218 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+:root {
+  --purple500: #281154;
+  --purple300: #270082;
+  --purple600: #1b0058;
+  --red600: #dc0000;
+  --body: #f9f6ff;
+  --max-width: 1200px;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,body{
+  line-height: 1.4;
+  font-weight: 300;
+  font-family: "Roboto", sans-serif ;
+}
+header{
+  background-color: var(--purple600);
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+.container{
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+}
+.container .logo{
+  font-size: 30px;
+  font-weight: 600;
+}
+.container ul{
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+}
+.container ul li{
+ border-bottom: 2px solid transparent;
+ transition: 0.2s ease-in;
+}
+.container ul li :hover{
+border-bottom: 2px solid white;
+transition: 0.2s ease-ins;
+}
+.container a{
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  font-weight: 400;
+}
+.hero{
+  background-image: url(images/hero_image\ \(1\).png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+.hero .container{
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 250px;
+  max-width: 1200px;
+}
+.container h1{
+  font-size: 60px;
+}
+.container h4{
+  font-size: 20px;
+  font-weight: 400;
+}
+@media (max-width:680px) {
+  .container ul{
+    display: none;
+  }
+  .hero.container {
+    max-width: 100%;
+    
+  }
+}
+
+/*  */  
+/* music section */
+/*  */
+.music-section{
+  background-color: var(--purple500);
+}
+.music-section .container{
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 1000px;
+  gap: 50px;
+  padding-top: 50px;
+  color: white  ;
+}
+.music-section h2{
+ font-size: 40px;
+ align-items: center;
+}
+.music-section h4{
+ font-size: 25px;
+ font-weight: 500;
+}
+.music-section h5{
+ font-size: 18px;
+ font-weight: 500;
+}
+.primary-btn{
+  background-color: red;
+  padding: 15px 20px;
+  border-radius: 3px;
+}
+
+.music-section img{
+ position: relative;
+ top: 400px;
+ margin-top: -400px;
+}
+/*  */
+.about_music {
+  z-index: 100;
+  margin-top: 450px;
+  
+}
+.about_music .container{
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  text-align: center;
+}
+.secondary-btn{
+  background-color: var(--purple300);
+  color: white;
+  padding: 15px 20px;
+  font-size: 15px;
+}
+.about_music .mac-image{
+  position: relative;
+  height: 100vh;
+}
+.video .container{
+  display:flex;
+  flex-direction: column;
+  max-width: 1200px;
+  gap: 50px;
+  text-align: center;
+  padding-top: 250px;
+  max-width: 1200px;
+}
+.video{
+  background-image: url(images/video.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+  color: white;
+}
+ .cards{
+  gap: 50px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.cards-detail{
+ display: flex;
+ flex-direction: column;
+ gap: 15px;
+
+}
+.cards-detail button{
+  align-self: flex-start;
+}
+
+footer{
+  background-color:var(--purple500) ;
+  color: white;
+}
+.data-section .box{
+  display: flex;
+  flex-direction: column;
+}
+footer .box h3{
+  text-decoration: underline;
+  text-align: center;
+}
+.box{
+  gap: 5px;
+}
+footer  ul {
+  display: flex;
+  flex-direction: column;
+}
+.copyright{
+  background-color: var(--purple600);
+ 
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  font-weight: 400;
+}
+button:hover {
+  transition: 0.2s ease-in-out;
+  opacity: 0.8;
+}
